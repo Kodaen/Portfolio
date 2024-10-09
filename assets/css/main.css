@@ -29,7 +29,8 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	/* display: block; */
+	}
 
 body {
 	line-height: 1;
@@ -3450,6 +3451,15 @@ input, select, textarea {
 /* Page Wrapper + Menu */
 
 	#page-wrapper {
+		background-blend-mode: soft-light;
+		opacity: 100;
+		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgb(0 0 0), rgb(8 0 60 / 82%)), url(../../images/banner.jpg);
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 0;
 		-moz-transition: opacity 0.5s ease;
 		-webkit-transition: opacity 0.5s ease;
 		-ms-transition: opacity 0.5s ease;
@@ -3958,9 +3968,9 @@ input, select, textarea {
 /* Main */
 
 	#main > header {
-		padding: 12em 0 10em 0 ;
+		padding: 12em 0 10em 0;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		/* background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../../images/banner.jpg); */
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-attachment: fixed;
