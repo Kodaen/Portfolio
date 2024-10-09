@@ -2691,6 +2691,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		justify-content: space-between;
 	}
 
 		.spotlight .image {
@@ -2772,7 +2773,25 @@ input, select, textarea {
 			padding-left: 0.5em;
 			margin-left: 2.5em;
 		}
-		
+
+		.spotlight .sidelink {
+			order :2;
+			height: 27rem;
+			width: 5%;
+			border: 10px white;
+		}
+
+		.spotlight .sidelink p {
+			text-wrap: nowrap;
+			margin: 0;
+			align-content: center;
+			font-size: 23px;
+			transform: rotate(90deg) translate(238%, -22%);
+			text-decoration: underline;
+			text-underline-offset: 3px;
+			text-shadow: 0 0 20px #00000042;
+		}
+
 
 
 		.spotlight:nth-child(2n) {
@@ -3803,14 +3822,14 @@ input, select, textarea {
 
 		#banner:after {
 			pointer-events: none;
-			-moz-transition: opacity 3s ease-in-out;
-			-webkit-transition: opacity 3s ease-in-out;
-			-ms-transition: opacity 3s ease-in-out;
-			transition: opacity 3s ease-in-out;
-			-moz-transition-delay: 1.25s;
-			-webkit-transition-delay: 1.25s;
-			-ms-transition-delay: 1.25s;
-			transition-delay: 1.25s;
+			-moz-transition: opacity 1s ease-in-out;
+			-webkit-transition: opacity 1s ease-in-out;
+			-ms-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
+			-moz-transition-delay: 0.5s;
+			-webkit-transition-delay: 0.5s;
+			-ms-transition-delay: 0.5s;
+			transition-delay: 0.5s;
 			content: '';
 			background: #060B4B;
 			display: block;
