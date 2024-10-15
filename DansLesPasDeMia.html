@@ -45,37 +45,55 @@
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
-								<h3>The goal of the project</h3>
-								<hr>
-								<h3>Features</h3>
-								<hr>
-								<h3>Main challenges</h3>
-								<hr>
-								<h3>Organisation and tool</h3>
-								<hr>
-
-
-								<h3>Lorem ipsum dolor</h3>
-								<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
-
-								<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
-
-								<hr />
-
-								<aside style="	width: 30%;
-    											padding-left: 15px;
-    											margin-left: 15px;
-    											margin-top: 30px;
-    											float: right;">
-								gros texte de test en aside poru voir si tout marche bien parce que sinon ça serait dommage que ça marche pas
-								</aside>
-
-								<h4>Tools</h4>
-								<p>As I were working on another project as well as attending to my courses, we decided to create a tool to dedicate the integration of dialogues of the game to the game designers.
-									This also implied teaching git to the different members of the group.
+								<h3>Presentation of the project</h3>
+								<p class="justify"> <span class="image right" style="max-width: 23%;"><img src="images/ProjectImages/TabletAndBook.png" alt="" /></span>
+									
+									I worked on "Dans Les Pas De Mïa" during my Master 1 at CNAM ENJMIN. In this game you help Mïa invite her friends to her birthday party through exploration and mini-games. It is meant to be played by a child-parent duo where one plays on a tablet and the other on a book provided with the game. 
+									<br><br>
+									The development spanned three months, during which I also attended to my  courses and developped a second end of year project "Disco Gecko" . The aim of these final Master 1 projects was to create a unique 10-minute experience in a team with students of different specializations. <br>
+														
 								</p>
+								
+									<h3>The team</h3>
+									<div class="col-12"><span class="image fit"><img src="images/ProjectImages/MiaTeam.png" alt="members of the team" /></span></div>
+								<hr>
+								
 
-								<p>Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui, at vestibulum sit amet, auctor bibendum neque.</p>
+								<h3>Features</h3>
+									<p class="justify">I developped many key features : a chapter system allowing to start from different point of the game, a dialogue system with a tool to facilitate their integration, 3 mini-games, and implemented all the UI.</p>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/MiaScreen1.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/MiaScreen2.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/MiaScreen3.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/MiaScreen4.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/MiaScreen5.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/MiaScreen6.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/MiaScreen7.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/MiaScreen8.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/MiaScreen9.png" alt="" /></span></div>
+										</div>
+									</div>
+								<hr>
+								<h3>Dialogue Tool</h3>
+								<p class="justify">	As I was working simutaniously on another project as well as attending to my courses, we decided to delegate the integration of the dialogues to the game designers through a tool. 
+									<br><br>
+									
+									The dialogue tool exploits the Scriptable Objects (SO) of Unity. Each NPC has its own SO containing his name, his emotions (with associated portraits variants), and its dialogue per chapter. Each Dialogue is also a Scriptable Object and is a succession of Lines. Finally a Line contains a character speaking, an emotion that determine which portrait of the character will display, a textfield and also an event. The event is stored in a seperate SO  to easily make specific interactions happen during the dialogue while restraining dependencies.
+									<br><br>
+
+									This tool proved to facilitate the integration of dialogue and supported each of our cases. To make pop up appear during the conversation, we made specific NPCs who would use a specific UI when talking. This way, we just had to choose these specific NPCs as speakers in a dialogue to display pop ups. Every dialogue or popups you can see in the game were made the exact same way using this tool.
+									<br><br>
+
+									Moreover, as most members of the team were not used to versionning and Unity, I and the other programmer taught them how to use the engine and git so they could be autonomus. We also asked them to make Pull Request. With those we avoided bugs, we oversaw their changed and taught them as much as possible on the workflow.
+								</p>
+								
+								<hr>
+								<h3> Links </h3>
+									Oral presentation: <a href="https://www.youtube.com/live/f4gjlVhe6hM?t=4527s" target="_blank"> <u>https://www.youtube.com/live/f4gjlVhe6hM?t=4527s</u></a>
+									<br>
+									Full Game demonstration: <a href="https://youtu.be/U35ojNCEFzc" target="_blank"><u>https://youtu.be/U35ojNCEFzc</u></a>
+								</p>
 
 							</div>
 						</section>
