@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Disco Gecko</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">BADANA Tristan</a></h1>
+						<!-- <nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav> -->
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Disco Gecko</h2>
+							<p>End of year project - UNITY - Computer - 2024 (3 months)</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								<h3>Presentation of the project</h3>
+								<p class="justify"> <span class="image right" style="max-width: 23%;"><img src="images/ProjectImages/HomeSweetHome.png" alt="" /></span>
+									
+									I worked on "Disco Gecko" during my Master 1 at CNAM ENJMIN. It’s a 2-versus-2 online party game set in a procedurally generated jungle nightclub, where you must find your teammate before the other team does. 
+									<br><br>
+									The development spanned three months, during which I also attended to my  courses and developed a second end of year project "Dans Les Pas De Mïa" . The objective of these final Master 1 projects was to create a unique 10-minute experience in a team of students with different specializations. <br>
+														
+								</p>
+								
+									<h3>The team</h3>
+									<div class="col-12"><span class="image fit"><img src="images/ProjectImages/DiscoGeckoTeam.png" alt="members of the team" /></span></div>
+								<hr>
+								
+
+								<h3>Features</h3>
+									<p class="justify">For this game I programmed all the procedural generation system along with a tool to preview it. I also implemented the team creation feature and character customization, and I made a tool for our User Researcher to visualize game replays.</p>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/DGScreen1.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/DGScreen2.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/DGScreen3.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/DGScreen4.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/DGScreen5.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/DGScreen6.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/DGScreen7.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/ProjectImages/DGScreen8.png" alt="" /></span></div>
+										</div>
+									</div>
+								<hr>
+								<h3>Procedural generation</h3>
+								<p class="justify">	As I was working simultaneously on another project as well as attending to my courses, I mainly focused on the procedural generation for this game.
+									<br><br>
+									
+									The game’s levels are procedurally generated using the Poisson Disk Sampling algorithm, which allows to place samples (or points) at a set distance from each other’s. To adapt it to the game, I added the possibility to choose the number of points we want to generate but also layers of generations with customizable combination methods.
+									<br><br>
+
+									The tool is split into two parts :
+									<ul>
+										<li>
+											The first part is used to generate points with specified parameters and preview them. (<a href="https://www.youtube.com/watch?v=AH5z8I3jiHQ" target="_blank"><u>Early demonstration video made for the team</u></a>)
+										</li>
+										<li>
+											The second part uses these parameters to spawn prefabs on a map. It also contains additional controls for monitoring the layer dependencies and the randomization of spawned prefabs. (<a href="https://www.youtube.com/watch?v=UTcf4ENFf3s" target="_blank"><u>Early demonstration video made for the team</u></a>)
+										</li>
+									</ul>
+									As this tool was primarily intended for debugging, it is complex to use and requires code adjustments for some specific cases, such as layer combination and the addition of decorative prefabs. 
+									<br>
+									This experience taught me how different debugging tools can be compared to development tools that are intended for Game Designers. The latter should be considered from the beginning with considerations of their usability and maintenance over time.
+								</p>
+								
+								<hr>
+								<h3> Links </h3>
+									Oral presentation: <a href="https://www.youtube.com/live/WrWi6q5Qd64?t=1274s" target="_blank"> <u>https://www.youtube.com/live/WrWi6q5Qd64?t=1274s </u></a>
+									<br>
+									Itch.io page :  <a href="https://aurore-be.itch.io/disco-gecko" target="_blank"><u>https://aurore-be.itch.io/disco-gecko </u></a>
+								</p>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://kodaen.itch.io" target="_blank" class="icon solid fa-gamepad"><span class="label"> Itch.io</span></a></li>
+							<li><a href="https://github.com/Kodaen" target="_blank" class="icon brands fa-github"><span class="label"> Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/tristan-badana/" target="_blank" class="icon brands fa-linkedin"><span class="label"> LinkedIn</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>tristanbadana@gmail.com</li>
+						</ul>
+					</footer>
+					<!--
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+						</footer>
+					-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
