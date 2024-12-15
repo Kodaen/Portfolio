@@ -2795,7 +2795,7 @@ input, select, textarea {
 
 		.spotlight .sidelink .circle {
 		    display: block;
-		    /* background: #01113f; */
+		    background: #01113f;
 		    border-radius: 50%;
 		    height: 32px;
 		    width: 32px;
